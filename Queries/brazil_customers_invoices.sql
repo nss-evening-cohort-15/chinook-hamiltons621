@@ -4,5 +4,5 @@ SELECT C.FirstName, C.LastName, I.InvoiceId, I.InvoiceDate, I.BillingCountry
 FROM Customer C
 INNER JOIN Invoice I 
 ON I.CustomerId = C.CustomerId
-WHERE I.BillingCountry = "Brazil"
+WHERE I.BillingCountry LIKE "Brazil"
 
